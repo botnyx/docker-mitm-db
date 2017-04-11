@@ -9,6 +9,7 @@ COPY requirements.txt /tmp/requirements.txt
 RUN addgroup -S mitmproxy && adduser -S -G mitmproxy mitmproxy \
     && apk add --no-cache \
         su-exec \
+        bash \
         git \
         g++ \
         libffi \
